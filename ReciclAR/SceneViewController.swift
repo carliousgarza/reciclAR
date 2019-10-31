@@ -17,6 +17,7 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
     @IBOutlet weak var lbReciclar: UILabel!
     @IBOutlet var tapGesture: UITapGestureRecognizer!
     @IBOutlet weak var lbScore: UILabel!
+    @IBOutlet weak var lbScoreLabel: UILabel!
     @IBOutlet weak var imgNextBall: UIImageView!
     @IBOutlet weak var btnCredits: UIButton!
     
@@ -27,6 +28,8 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         super.viewDidLoad()
         sceneView.scene.physicsWorld.contactDelegate = self
         sceneView.session.pause()
+        lbScore.isHidden = true
+        lbScoreLabel.isHidden = true
         upNext()
     }
     
@@ -85,16 +88,28 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
             contact.nodeB.removeAllActions()
             contact.nodeB.removeAllParticleSystems()
             contact.nodeB.removeFromParentNode()
+            DispatchQueue.main.async {
+                self.scoreKeeperWrong()
+            }
         }
         else {
             contact.nodeA.removeAllActions()
             contact.nodeA.removeAllParticleSystems()
             contact.nodeA.removeFromParentNode()
+            DispatchQueue.main.async {
+                self.scoreKeeperWrong()
+            }
         }
     }
     
     func scoreKeeper(){
         score = score + 1
+        print(score)
+        self.lbScore.text = String(score)
+    }
+    
+    func scoreKeeperWrong(){
+        score = score - 1
         print(score)
         self.lbScore.text = String(score)
     }
@@ -105,6 +120,8 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         btnCredits.isHidden = true
         btnInstructions.isHidden = true
         lbReciclar.isHidden = true
+        lbScore.isHidden = false
+        lbScoreLabel.isHidden = false
         createTrashCan()
     }
     

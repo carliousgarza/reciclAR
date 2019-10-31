@@ -15,26 +15,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instrucciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlg-rS-BAe">
-                                <rect key="frame" x="304.5" y="50" width="103" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlg-rS-BAe">
+                                <rect key="frame" x="310.5" y="50" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Apuntar a un espacio vacio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb6-d4-AGh">
-                                <rect key="frame" x="244.5" y="171" width="223" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Point to an empty space" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb6-d4-AGh">
+                                <rect key="frame" x="255.5" y="171" width="201" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Hacer click en el botón empezar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVH-N0-29w">
-                                <rect key="frame" x="223.5" y="232" width="265" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Click start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVH-N0-29w">
+                                <rect key="frame" x="307.5" y="232" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Comenzar a jugar!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VO3-ZK-ye2">
-                                <rect key="frame" x="276.5" y="293" width="159" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Choose the right trashcan for the trash shown in the bottom right" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VO3-ZK-ye2">
+                                <rect key="frame" x="206" y="293" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vk1-1X-94p"/>
+                                    <constraint firstAttribute="width" constant="300" id="xmz-2H-UcF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Tap the screen to throw the trash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4H-49-Ixe">
+                                <rect key="frame" x="219.5" y="383" width="273" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -47,16 +57,30 @@
                                     <action selector="handleBack:" destination="gV6-kP-PbK" eventType="touchUpInside" id="dPv-AN-vet"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. You have 30 seconds to get as many points as you can!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP6-Ay-wRw">
+                                <rect key="frame" x="206" y="444" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="TZL-3R-pbP"/>
+                                    <constraint firstAttribute="width" constant="300" id="TrH-SK-YWZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="gb6-d4-AGh" firstAttribute="top" secondItem="Jlg-rS-BAe" secondAttribute="bottom" constant="100" id="1e3-Fq-l3D"/>
                             <constraint firstItem="Jlg-rS-BAe" firstAttribute="centerX" secondItem="GsP-el-KTs" secondAttribute="centerX" id="AWL-1p-U02"/>
+                            <constraint firstItem="EP6-Ay-wRw" firstAttribute="top" secondItem="y4H-49-Ixe" secondAttribute="bottom" constant="40" id="BI6-Hj-EYE"/>
                             <constraint firstItem="QVH-N0-29w" firstAttribute="centerX" secondItem="GsP-el-KTs" secondAttribute="centerX" id="IcS-gk-Oac"/>
+                            <constraint firstItem="y4H-49-Ixe" firstAttribute="top" secondItem="VO3-ZK-ye2" secondAttribute="bottom" constant="40" id="Lwd-Qp-8vM"/>
+                            <constraint firstItem="VO3-ZK-ye2" firstAttribute="centerX" secondItem="GsP-el-KTs" secondAttribute="centerX" id="PR6-3b-Bcu"/>
                             <constraint firstItem="QVH-N0-29w" firstAttribute="top" secondItem="gb6-d4-AGh" secondAttribute="bottom" constant="40" id="UL0-ch-WSW"/>
-                            <constraint firstItem="VO3-ZK-ye2" firstAttribute="top" secondItem="QVH-N0-29w" secondAttribute="bottom" constant="40" id="ZMY-4O-m4X"/>
+                            <constraint firstItem="VO3-ZK-ye2" firstAttribute="top" secondItem="QVH-N0-29w" secondAttribute="bottom" constant="40" id="jaX-uV-ykG"/>
+                            <constraint firstItem="y4H-49-Ixe" firstAttribute="centerX" secondItem="GsP-el-KTs" secondAttribute="centerX" id="kMD-CX-p8H"/>
+                            <constraint firstItem="EP6-Ay-wRw" firstAttribute="centerX" secondItem="GsP-el-KTs" secondAttribute="centerX" id="mYR-a1-WmH"/>
                             <constraint firstItem="gb6-d4-AGh" firstAttribute="centerX" secondItem="GsP-el-KTs" secondAttribute="centerX" id="qj6-4G-jVy"/>
-                            <constraint firstItem="VO3-ZK-ye2" firstAttribute="centerX" secondItem="GsP-el-KTs" secondAttribute="centerX" id="w4O-2c-Ln7"/>
                             <constraint firstItem="Jlg-rS-BAe" firstAttribute="top" secondItem="7s1-vI-CmJ" secondAttribute="top" constant="50" id="yQ0-lf-Wp0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7s1-vI-CmJ"/>
@@ -68,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afc-uH-ZsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-342" y="850"/>
+            <point key="canvasLocation" x="-342.1875" y="849.609375"/>
         </scene>
         <!--Scene View Controller-->
         <scene sceneID="P54-3z-fYg">
@@ -161,7 +185,8 @@
                         <outlet property="btnStart" destination="cn4-fT-vd7" id="c0D-SG-IZ6"/>
                         <outlet property="imgNextBall" destination="Pj2-Ai-wvG" id="kPA-bl-rvm"/>
                         <outlet property="lbReciclar" destination="m10-2Z-nT4" id="ESh-Ec-Q7F"/>
-                        <outlet property="lbScore" destination="ERf-Ve-grx" id="HMb-Kn-MQB"/>
+                        <outlet property="lbScore" destination="ERf-Ve-grx" id="gOm-UQ-hud"/>
+                        <outlet property="lbScoreLabel" destination="qAA-aB-o9j" id="eH7-pb-72C"/>
                         <outlet property="sceneView" destination="Sth-Zt-ZTa" id="AMe-kn-e8T"/>
                         <outlet property="tapGesture" destination="o9w-lv-Mm6" id="2JN-oi-KRT"/>
                     </connections>
