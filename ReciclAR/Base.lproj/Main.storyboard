@@ -94,20 +94,50 @@
             </objects>
             <point key="canvasLocation" x="-342.1875" y="849.609375"/>
         </scene>
-        <!--View Controller-->
+        <!--Score View Controller-->
         <scene sceneID="nXc-5T-BjL">
             <objects>
-                <viewController id="MVr-kT-9yt" sceneMemberID="viewController">
+                <viewController id="MVr-kT-9yt" customClass="ScoreViewController" customModule="ReciclAR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QRF-h8-c5M">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbW-F8-RSE">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="handleBack:" destination="MVr-kT-9yt" eventType="touchUpInside" id="2Dd-Oe-Eny"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yce-dP-03I">
+                                <rect key="frame" x="131" y="376" width="450" height="232"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="4Mn-Bj-zlE"/>
+                                    <constraint firstAttribute="height" constant="232" id="540-hM-wKU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bbW-F8-RSE" firstAttribute="top" secondItem="mnh-tm-N6c" secondAttribute="top" constant="20" id="HuA-w5-TGN"/>
+                            <constraint firstItem="yce-dP-03I" firstAttribute="centerX" secondItem="QRF-h8-c5M" secondAttribute="centerX" id="W6i-2G-3Rb"/>
+                            <constraint firstItem="yce-dP-03I" firstAttribute="centerY" secondItem="QRF-h8-c5M" secondAttribute="centerY" id="YTd-ZS-mQF"/>
+                            <constraint firstItem="bbW-F8-RSE" firstAttribute="leading" secondItem="mnh-tm-N6c" secondAttribute="leading" constant="20" id="tUj-gh-DE1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mnh-tm-N6c"/>
                     </view>
+                    <navigationItem key="navigationItem" id="h3C-ZU-PSV"/>
+                    <connections>
+                        <outlet property="btnBack" destination="bbW-F8-RSE" id="Y9z-cf-Nnl"/>
+                        <outlet property="lbScore" destination="yce-dP-03I" id="MBo-Dd-Q0H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKp-yE-sHz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-342" y="-562"/>
+            <point key="canvasLocation" x="-342.1875" y="-562.5"/>
         </scene>
         <!--Scene View Controller-->
         <scene sceneID="P54-3z-fYg">
@@ -279,6 +309,7 @@
                         <outlet property="lbTimeLeft" destination="hod-gd-M8M" id="JCa-Ql-9FK"/>
                         <outlet property="sceneView" destination="Sth-Zt-ZTa" id="AMe-kn-e8T"/>
                         <outlet property="tapGesture" destination="o9w-lv-Mm6" id="2JN-oi-KRT"/>
+                        <segue destination="MVr-kT-9yt" kind="show" identifier="score" id="cza-Ta-ta9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="er1-df-VAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

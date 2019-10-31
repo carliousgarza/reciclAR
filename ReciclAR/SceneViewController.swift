@@ -156,9 +156,13 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         if(timeLeft <= 0){
             timer?.invalidate()
             timer = nil
-            //showscore
+            showScore()
             handleBack(btnBack)
         }
+    }
+    
+    func showScore(){
+        performSegue(withIdentifier: "score", sender: self)
     }
     
     @IBAction func handleBack(_ sender: UIButton) {
@@ -173,8 +177,9 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         lbScoreLabel.isHidden = true
         imgLogo.isHidden = false
         blurView2.isHidden = false
-        lbScoreLabel.text = String(0)
+        lbScore.text = String(0)
         lbTimeLeft.isHidden = true
+        timeLeft = 30
         score = 0
         deleteTrashCan()
     }
@@ -322,7 +327,10 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if(segue.identifier == "score"){
+            let scoreView = segue.destination as! ScoreViewController
+            scoreView.score = score
+        }
     }
     
 

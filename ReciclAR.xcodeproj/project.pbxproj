@@ -26,6 +26,7 @@
 		B493FFA22369EAAE00833173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B493FFA02369EAAE00833173 /* LaunchScreen.storyboard */; };
 		B493FFAA2369EB1600833173 /* InstruccionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493FFA92369EB1600833173 /* InstruccionesViewController.swift */; };
 		B493FFAC2369F09C00833173 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493FFAB2369F09C00833173 /* SceneViewController.swift */; };
+		B4A3CCE6236B885100BDBC5A /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A3CCE5236B885100BDBC5A /* ScoreViewController.swift */; };
 		B4A6486A236B303100E2440A /* boteverde.dae in Resources */ = {isa = PBXBuildFile; fileRef = B4A64869236B303100E2440A /* boteverde.dae */; };
 		B4A6486C236B304700E2440A /* boteverde.scn in Resources */ = {isa = PBXBuildFile; fileRef = B4A6486B236B304700E2440A /* boteverde.scn */; };
 		B4A6486E236B338800E2440A /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A6486D236B338800E2440A /* CreditsViewController.swift */; };
@@ -62,6 +63,7 @@
 		B493FFA32369EAAE00833173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B493FFA92369EB1600833173 /* InstruccionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstruccionesViewController.swift; sourceTree = "<group>"; };
 		B493FFAB2369F09C00833173 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
+		B4A3CCE5236B885100BDBC5A /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		B4A64869236B303100E2440A /* boteverde.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = boteverde.dae; path = ../boteverde.dae; sourceTree = "<group>"; };
 		B4A6486B236B304700E2440A /* boteverde.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = boteverde.scn; sourceTree = "<group>"; };
 		B4A6486D236B338800E2440A /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				B493FF972369EAAC00833173 /* SceneDelegate.swift */,
 				B493FF992369EAAC00833173 /* ViewController.swift */,
 				B493FF9B2369EAAC00833173 /* Main.storyboard */,
+				B4A3CCE5236B885100BDBC5A /* ScoreViewController.swift */,
 				B4A6486D236B338800E2440A /* CreditsViewController.swift */,
 				B493FFAB2369F09C00833173 /* SceneViewController.swift */,
 				B493FFA92369EB1600833173 /* InstruccionesViewController.swift */,
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A3CCE6236B885100BDBC5A /* ScoreViewController.swift in Sources */,
 				B493FFAC2369F09C00833173 /* SceneViewController.swift in Sources */,
 				B4A6486E236B338800E2440A /* CreditsViewController.swift in Sources */,
 				B493FFAA2369EB1600833173 /* InstruccionesViewController.swift in Sources */,
