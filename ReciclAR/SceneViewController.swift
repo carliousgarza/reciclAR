@@ -22,9 +22,19 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
     @IBOutlet weak var imgNextBall: UIImageView!
     @IBOutlet weak var btnCredits: UIButton!
     @IBOutlet weak var imgLogo: UIImageView!
+    @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var blurView: UIVisualEffectView!
+    @IBOutlet weak var blurView2: UIView!
+    @IBOutlet weak var lbTimeLeft: UILabel!
     
     var nextBall = 0;
     var score = 0;
+    var homeNode = SCNNode()
+    var homeNode2 = SCNNode()
+    var homeNode3 = SCNNode()
+    
+    var timer:Timer?
+    var timeLeft = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +42,9 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         sceneView.session.pause()
         lbScore.isHidden = true
         lbScoreLabel.isHidden = true
+        btnBack.isHidden = true
+        blurView.isHidden = false
+        setUpScene()
         upNext()
     }
     
@@ -119,13 +132,47 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
     @IBAction func handleStart(_ sender: UIButton) {
         setUpScene()
         btnStart.isHidden = true
+        sceneView.isHidden = false
+        btnBack.isHidden = false
         btnCredits.isHidden = true
         btnInstructions.isHidden = true
         lbReciclar.isHidden = true
         lbScore.isHidden = false
         lbScoreLabel.isHidden = false
         imgLogo.isHidden = true
+        blurView2.isHidden = true
+        blurView.isHidden = true
         createTrashCan()
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
+    }
+    
+    @objc func onTimerFires(){
+        timeLeft = timeLeft - 1
+        lbTimeLeft.text = "Time left: \(timeLeft)"
+        
+        if(timeLeft <= 0){
+            timer?.invalidate()
+            timer = nil
+            //showscore
+            handleBack(btnBack)
+        }
+    }
+    
+    @IBAction func handleBack(_ sender: UIButton) {
+        blurView.isHidden = false
+        btnBack.isHidden = true
+        sceneView.isHidden = false
+        btnStart.isHidden = false
+        btnCredits.isHidden = false
+        btnInstructions.isHidden = false
+        lbReciclar.isHidden = false
+        lbScore.isHidden = true
+        lbScoreLabel.isHidden = true
+        imgLogo.isHidden = false
+        blurView2.isHidden = false
+        lbScoreLabel.text = String(0)
+        score = 0
+        deleteTrashCan()
     }
     
     func setUpScene(){
@@ -143,26 +190,34 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
     
     func createTrashCan() {
         guard let homeScene = SCNScene(named: "boteazul.scn"),
-            let homeNode = homeScene.rootNode.childNode(withName: "OrigenBAzul", recursively: false)
+            let homeNodee = homeScene.rootNode.childNode(withName: "OrigenBAzul", recursively: false)
             else {return}
-        homeNode.position = SCNVector3(0,-4,-10)
+        homeNodee.position = SCNVector3(0,-4,-10)
         
         guard let homeScene2 = SCNScene(named: "boteverde.scn"),
-            let homeNode2 = homeScene2.rootNode.childNode(withName: "OrigenBVerde", recursively: false)
+            let homeNode22 = homeScene2.rootNode.childNode(withName: "OrigenBVerde", recursively: false)
             else {return}
-        homeNode2.position = SCNVector3(-3,-4,-10)
+        homeNode22.position = SCNVector3(-3,-4,-10)
         
         
         guard let homeScene3 = SCNScene(named: "botegris.scn"),
-            let homeNode3 = homeScene3.rootNode.childNode(withName: "OrigenBGris", recursively: false)
+            let homeNode33 = homeScene3.rootNode.childNode(withName: "OrigenBGris", recursively: false)
             else {return}
-        homeNode3.position = SCNVector3(3,-4,-10)
-        
-        
+        homeNode33.position = SCNVector3(3,-4,-10)
+                
+        homeNode = homeNodee
+        homeNode2 = homeNode22
+        homeNode3 = homeNode33
         
         sceneView.scene.rootNode.addChildNode(homeNode)
         sceneView.scene.rootNode.addChildNode(homeNode2)
         sceneView.scene.rootNode.addChildNode(homeNode3)
+    }
+    
+    func deleteTrashCan() {
+        homeNode.removeFromParentNode()
+        homeNode2.removeFromParentNode()
+        homeNode3.removeFromParentNode()
     }
     
     func upNext(){
