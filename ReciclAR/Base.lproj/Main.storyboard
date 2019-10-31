@@ -147,6 +147,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeP-dr-0oM">
+                                <rect key="frame" x="334" y="599" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="vkW-fN-HfN"/>
+                                    <constraint firstAttribute="height" constant="100" id="xmB-hf-2dQ"/>
+                                </constraints>
+                                <state key="normal" image="iconIns"/>
+                                <connections>
+                                    <segue destination="gV6-kP-PbK" kind="show" id="KBn-f4-SVv"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSN-kX-fe1">
                                 <rect key="frame" x="20" y="904" width="100" height="100"/>
                                 <constraints>
@@ -165,16 +176,10 @@
                                     <constraint firstAttribute="height" constant="248" id="ojR-nR-CIE"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeP-dr-0oM">
-                                <rect key="frame" x="334" y="599" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="vkW-fN-HfN"/>
-                                    <constraint firstAttribute="height" constant="100" id="xmB-hf-2dQ"/>
-                                </constraints>
-                                <state key="normal" image="iconIns"/>
-                                <connections>
-                                    <segue destination="gV6-kP-PbK" kind="show" id="KBn-f4-SVv"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcl-Sx-cfM">
+                                <rect key="frame" x="26" y="49" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
