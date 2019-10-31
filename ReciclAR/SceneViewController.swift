@@ -21,6 +21,7 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
     @IBOutlet weak var lbScoreLabel: UILabel!
     @IBOutlet weak var imgNextBall: UIImageView!
     @IBOutlet weak var btnCredits: UIButton!
+    @IBOutlet weak var imgLogo: UIImageView!
     
     var nextBall = 0;
     var score = 0;
@@ -123,6 +124,7 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         lbReciclar.isHidden = true
         lbScore.isHidden = false
         lbScoreLabel.isHidden = false
+        imgLogo.isHidden = true
         createTrashCan()
     }
     
