@@ -18,6 +18,7 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
     @IBOutlet var tapGesture: UITapGestureRecognizer!
     @IBOutlet weak var lbScore: UILabel!
     @IBOutlet weak var imgNextBall: UIImageView!
+    @IBOutlet weak var btnCredits: UIButton!
     
     var nextBall = 0;
     var score = 0;
@@ -101,6 +102,7 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
     @IBAction func handleStart(_ sender: UIButton) {
         setUpScene()
         btnStart.isHidden = true
+        btnCredits.isHidden = true
         btnInstructions.isHidden = true
         lbReciclar.isHidden = true
         createTrashCan()

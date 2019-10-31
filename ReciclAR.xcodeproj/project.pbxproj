@@ -28,6 +28,16 @@
 		B493FFAC2369F09C00833173 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493FFAB2369F09C00833173 /* SceneViewController.swift */; };
 		B4A6486A236B303100E2440A /* boteverde.dae in Resources */ = {isa = PBXBuildFile; fileRef = B4A64869236B303100E2440A /* boteverde.dae */; };
 		B4A6486C236B304700E2440A /* boteverde.scn in Resources */ = {isa = PBXBuildFile; fileRef = B4A6486B236B304700E2440A /* boteverde.scn */; };
+		B4A6486E236B338800E2440A /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A6486D236B338800E2440A /* CreditsViewController.swift */; };
+		B4A64871236B3B4200E2440A /* micara.dae in Resources */ = {isa = PBXBuildFile; fileRef = B4A6486F236B3B4200E2440A /* micara.dae */; };
+		B4A64872236B3B4200E2440A /* mi cara.png in Resources */ = {isa = PBXBuildFile; fileRef = B4A64870236B3B4200E2440A /* mi cara.png */; };
+		B4A64874236B3B5600E2440A /* micara.scn in Resources */ = {isa = PBXBuildFile; fileRef = B4A64873236B3B5600E2440A /* micara.scn */; };
+		B4A64877236B3D8200E2440A /* Ulrik.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4A64875236B3D8200E2440A /* Ulrik.jpg */; };
+		B4A64878236B3D8200E2440A /* micara2.dae in Resources */ = {isa = PBXBuildFile; fileRef = B4A64876236B3D8200E2440A /* micara2.dae */; };
+		B4A6487A236B3D9800E2440A /* micara2.scn in Resources */ = {isa = PBXBuildFile; fileRef = B4A64879236B3D9800E2440A /* micara2.scn */; };
+		B4A64887236B3EF300E2440A /* andres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4A64885236B3EF300E2440A /* andres.jpg */; };
+		B4A64888236B3EF300E2440A /* micara3.dae in Resources */ = {isa = PBXBuildFile; fileRef = B4A64886236B3EF300E2440A /* micara3.dae */; };
+		B4A6488C236B3F4200E2440A /* micara3.scn in Resources */ = {isa = PBXBuildFile; fileRef = B4A6488B236B3F4200E2440A /* micara3.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +64,16 @@
 		B493FFAB2369F09C00833173 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 		B4A64869236B303100E2440A /* boteverde.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = boteverde.dae; path = ../boteverde.dae; sourceTree = "<group>"; };
 		B4A6486B236B304700E2440A /* boteverde.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = boteverde.scn; sourceTree = "<group>"; };
+		B4A6486D236B338800E2440A /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		B4A6486F236B3B4200E2440A /* micara.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = micara.dae; sourceTree = "<group>"; };
+		B4A64870236B3B4200E2440A /* mi cara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mi cara.png"; sourceTree = "<group>"; };
+		B4A64873236B3B5600E2440A /* micara.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = micara.scn; sourceTree = "<group>"; };
+		B4A64875236B3D8200E2440A /* Ulrik.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ulrik.jpg; sourceTree = "<group>"; };
+		B4A64876236B3D8200E2440A /* micara2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = micara2.dae; sourceTree = "<group>"; };
+		B4A64879236B3D9800E2440A /* micara2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = micara2.scn; sourceTree = "<group>"; };
+		B4A64885236B3EF300E2440A /* andres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = andres.jpg; sourceTree = "<group>"; };
+		B4A64886236B3EF300E2440A /* micara3.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = micara3.dae; sourceTree = "<group>"; };
+		B4A6488B236B3F4200E2440A /* micara3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = micara3.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B430E976236A425F00F35238 /* daes */ = {
+		B430E976236A425F00F35238 /* daes y assets */ = {
 			isa = PBXGroup;
 			children = (
+				B4A64885236B3EF300E2440A /* andres.jpg */,
+				B4A64886236B3EF300E2440A /* micara3.dae */,
+				B4A64876236B3D8200E2440A /* micara2.dae */,
+				B4A64875236B3D8200E2440A /* Ulrik.jpg */,
+				B4A64870236B3B4200E2440A /* mi cara.png */,
+				B4A6486F236B3B4200E2440A /* micara.dae */,
 				B4A64869236B303100E2440A /* boteverde.dae */,
 				B492C8F22369FE4B008BD80D /* lata.dae */,
 				B430E952236A079700F35238 /* manzana.dae */,
@@ -78,7 +104,7 @@
 				B430E96A236A3C0B00F35238 /* boteazul.dae */,
 				B430E972236A3DA100F35238 /* botegris.dae */,
 			);
-			path = daes;
+			path = "daes y assets";
 			sourceTree = "<group>";
 		};
 		B493FF892369EAAC00833173 = {
@@ -100,11 +126,12 @@
 		B493FF942369EAAC00833173 /* ReciclAR */ = {
 			isa = PBXGroup;
 			children = (
-				B430E976236A425F00F35238 /* daes */,
+				B430E976236A425F00F35238 /* daes y assets */,
 				B493FF952369EAAC00833173 /* AppDelegate.swift */,
 				B493FF972369EAAC00833173 /* SceneDelegate.swift */,
 				B493FF992369EAAC00833173 /* ViewController.swift */,
 				B493FF9B2369EAAC00833173 /* Main.storyboard */,
+				B4A6486D236B338800E2440A /* CreditsViewController.swift */,
 				B493FFAB2369F09C00833173 /* SceneViewController.swift */,
 				B493FFA92369EB1600833173 /* InstruccionesViewController.swift */,
 				B493FF9E2369EAAE00833173 /* Assets.xcassets */,
@@ -116,6 +143,9 @@
 				B430E96C236A3C1300F35238 /* boteazul.scn */,
 				B4A6486B236B304700E2440A /* boteverde.scn */,
 				B430E974236A3DA800F35238 /* botegris.scn */,
+				B4A64873236B3B5600E2440A /* micara.scn */,
+				B4A64879236B3D9800E2440A /* micara2.scn */,
+				B4A6488B236B3F4200E2440A /* micara3.scn */,
 			);
 			path = ReciclAR;
 			sourceTree = "<group>";
@@ -180,17 +210,26 @@
 			files = (
 				B492C8F5236A013B008BD80D /* lata.scn in Resources */,
 				B430E953236A079700F35238 /* manzana.dae in Resources */,
+				B4A64887236B3EF300E2440A /* andres.jpg in Resources */,
+				B4A64888236B3EF300E2440A /* micara3.dae in Resources */,
 				B493FFA22369EAAE00833173 /* LaunchScreen.storyboard in Resources */,
 				B493FF9F2369EAAE00833173 /* Assets.xcassets in Resources */,
 				B430E96D236A3C1300F35238 /* boteazul.scn in Resources */,
+				B4A64872236B3B4200E2440A /* mi cara.png in Resources */,
+				B4A64878236B3D8200E2440A /* micara2.dae in Resources */,
+				B4A64871236B3B4200E2440A /* micara.dae in Resources */,
 				B492C8F32369FE4B008BD80D /* lata.dae in Resources */,
 				B4A6486C236B304700E2440A /* boteverde.scn in Resources */,
 				B430E95D236A08C500F35238 /* boladepapel.dae in Resources */,
 				B430E973236A3DA100F35238 /* botegris.dae in Resources */,
+				B4A64877236B3D8200E2440A /* Ulrik.jpg in Resources */,
+				B4A6488C236B3F4200E2440A /* micara3.scn in Resources */,
 				B493FF9D2369EAAC00833173 /* Main.storyboard in Resources */,
 				B430E96B236A3C0B00F35238 /* boteazul.dae in Resources */,
 				B4A6486A236B303100E2440A /* boteverde.dae in Resources */,
 				B430E955236A07A100F35238 /* manzana.scn in Resources */,
+				B4A64874236B3B5600E2440A /* micara.scn in Resources */,
+				B4A6487A236B3D9800E2440A /* micara2.scn in Resources */,
 				B430E95F236A08CB00F35238 /* boladepapel.scn in Resources */,
 				B430E975236A3DA800F35238 /* botegris.scn in Resources */,
 				B430E95B236A086A00F35238 /* papertexture.jpg in Resources */,
@@ -205,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B493FFAC2369F09C00833173 /* SceneViewController.swift in Sources */,
+				B4A6486E236B338800E2440A /* CreditsViewController.swift in Sources */,
 				B493FFAA2369EB1600833173 /* InstruccionesViewController.swift in Sources */,
 				B493FF9A2369EAAC00833173 /* ViewController.swift in Sources */,
 				B493FF962369EAAC00833173 /* AppDelegate.swift in Sources */,

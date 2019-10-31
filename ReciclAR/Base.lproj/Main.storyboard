@@ -39,6 +39,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcV-C0-mB3">
+                                <rect key="frame" x="26" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="handleBack:" destination="gV6-kP-PbK" eventType="touchUpInside" id="dPv-AN-vet"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -54,6 +62,9 @@
                         <viewLayoutGuide key="safeArea" id="7s1-vI-CmJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="F5m-gQ-mqF"/>
+                    <connections>
+                        <outlet property="btnBack" destination="VcV-C0-mB3" id="7nP-8J-ebA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afc-uH-ZsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,11 +124,19 @@
                                     <segue destination="gV6-kP-PbK" kind="show" id="KBn-f4-SVv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSN-kX-fe1">
+                                <rect key="frame" x="353" y="629" width="62" height="30"/>
+                                <state key="normal" title="CREDITS"/>
+                                <connections>
+                                    <segue destination="uGa-DM-QS5" kind="show" id="P05-df-CfW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Sth-Zt-ZTa" firstAttribute="bottom" secondItem="b5L-v1-hFT" secondAttribute="bottom" id="2EA-vb-OH0"/>
                             <constraint firstItem="b5L-v1-hFT" firstAttribute="trailing" secondItem="Pj2-Ai-wvG" secondAttribute="trailing" constant="20" id="Bd1-pb-I1n"/>
+                            <constraint firstItem="KSN-kX-fe1" firstAttribute="top" secondItem="yeP-dr-0oM" secondAttribute="bottom" constant="36" id="J9h-KK-Ywr"/>
                             <constraint firstItem="Sth-Zt-ZTa" firstAttribute="leading" secondItem="b5L-v1-hFT" secondAttribute="leading" id="Lbb-G7-OoW"/>
                             <constraint firstItem="cn4-fT-vd7" firstAttribute="centerY" secondItem="YY8-sa-F8b" secondAttribute="centerY" id="M2a-2c-QQF"/>
                             <constraint firstItem="qAA-aB-o9j" firstAttribute="leading" secondItem="b5L-v1-hFT" secondAttribute="leading" constant="20" id="NSx-q3-qpK"/>
@@ -131,11 +150,13 @@
                             <constraint firstItem="m10-2Z-nT4" firstAttribute="top" secondItem="b5L-v1-hFT" secondAttribute="top" constant="57" id="dOY-VL-gkx"/>
                             <constraint firstItem="b5L-v1-hFT" firstAttribute="bottom" secondItem="Pj2-Ai-wvG" secondAttribute="bottom" constant="20" id="hVs-1f-Pc9"/>
                             <constraint firstItem="Sth-Zt-ZTa" firstAttribute="top" secondItem="b5L-v1-hFT" secondAttribute="top" id="iyb-u5-5d4"/>
+                            <constraint firstItem="KSN-kX-fe1" firstAttribute="centerX" secondItem="YY8-sa-F8b" secondAttribute="centerX" id="oYd-Oa-TaO"/>
                             <constraint firstItem="m10-2Z-nT4" firstAttribute="centerX" secondItem="YY8-sa-F8b" secondAttribute="centerX" id="q3S-QB-47l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b5L-v1-hFT"/>
                     </view>
                     <connections>
+                        <outlet property="btnCredits" destination="KSN-kX-fe1" id="kwd-mh-eTC"/>
                         <outlet property="btnInstructions" destination="yeP-dr-0oM" id="Ud3-CN-GQI"/>
                         <outlet property="btnStart" destination="cn4-fT-vd7" id="c0D-SG-IZ6"/>
                         <outlet property="imgNextBall" destination="Pj2-Ai-wvG" id="kPA-bl-rvm"/>
@@ -153,6 +174,55 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-342.1875" y="157.6171875"/>
+        </scene>
+        <!--Credits View Controller-->
+        <scene sceneID="Fcf-kE-wxw">
+            <objects>
+                <viewController id="uGa-DM-QS5" customClass="CreditsViewController" customModule="ReciclAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W4S-Vf-m1E">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1f-X5-cxP">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="handleBack:" destination="uGa-DM-QS5" eventType="touchUpInside" id="Lzx-S0-LPF"/>
+                                </connections>
+                            </button>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6o-gc-eyd">
+                                <rect key="frame" x="30" y="50" width="652" height="884"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bF7-kU-oot" appends="YES" id="rMW-xe-icR"/>
+                                </connections>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="l6o-gc-eyd" firstAttribute="leading" secondItem="S4b-gl-1be" secondAttribute="leading" constant="30" id="63G-Yk-60Q"/>
+                            <constraint firstItem="l6o-gc-eyd" firstAttribute="top" secondItem="S4b-gl-1be" secondAttribute="top" constant="50" id="7B2-3w-GkJ"/>
+                            <constraint firstItem="S4b-gl-1be" firstAttribute="trailing" secondItem="l6o-gc-eyd" secondAttribute="trailing" constant="30" id="HnQ-Kl-Si2"/>
+                            <constraint firstItem="f1f-X5-cxP" firstAttribute="top" secondItem="S4b-gl-1be" secondAttribute="top" constant="20" id="MjS-RZ-Msi"/>
+                            <constraint firstItem="S4b-gl-1be" firstAttribute="bottom" secondItem="l6o-gc-eyd" secondAttribute="bottom" constant="50" id="PiI-FP-m6a"/>
+                            <constraint firstItem="f1f-X5-cxP" firstAttribute="leading" secondItem="S4b-gl-1be" secondAttribute="leading" constant="20" id="qje-FD-jUS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S4b-gl-1be"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lm6-2Y-f7o"/>
+                    <connections>
+                        <outlet property="sceneView" destination="l6o-gc-eyd" id="jPR-yi-Y5v"/>
+                        <outlet property="tapGesture" destination="bF7-kU-oot" id="zGH-Ua-uh0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wvm-tF-IfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bF7-kU-oot">
+                    <connections>
+                        <action selector="tapDetected:" destination="uGa-DM-QS5" id="dPc-xF-JEr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="458.59375" y="157.6171875"/>
         </scene>
     </scenes>
 </document>
