@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B430E953236A079700F35238 /* manzana.dae in Resources */ = {isa = PBXBuildFile; fileRef = B430E952236A079700F35238 /* manzana.dae */; };
+		B430E955236A07A100F35238 /* manzana.scn in Resources */ = {isa = PBXBuildFile; fileRef = B430E954236A07A100F35238 /* manzana.scn */; };
+		B430E95B236A086A00F35238 /* papertexture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B430E959236A086A00F35238 /* papertexture.jpg */; };
+		B430E95D236A08C500F35238 /* boladepapel.dae in Resources */ = {isa = PBXBuildFile; fileRef = B430E95C236A08C500F35238 /* boladepapel.dae */; };
+		B430E95F236A08CB00F35238 /* boladepapel.scn in Resources */ = {isa = PBXBuildFile; fileRef = B430E95E236A08CB00F35238 /* boladepapel.scn */; };
+		B430E96B236A3C0B00F35238 /* boteazul.dae in Resources */ = {isa = PBXBuildFile; fileRef = B430E96A236A3C0B00F35238 /* boteazul.dae */; };
+		B430E96D236A3C1300F35238 /* boteazul.scn in Resources */ = {isa = PBXBuildFile; fileRef = B430E96C236A3C1300F35238 /* boteazul.scn */; };
+		B430E973236A3DA100F35238 /* botegris.dae in Resources */ = {isa = PBXBuildFile; fileRef = B430E972236A3DA100F35238 /* botegris.dae */; };
+		B430E975236A3DA800F35238 /* botegris.scn in Resources */ = {isa = PBXBuildFile; fileRef = B430E974236A3DA800F35238 /* botegris.scn */; };
+		B492C8F32369FE4B008BD80D /* lata.dae in Resources */ = {isa = PBXBuildFile; fileRef = B492C8F22369FE4B008BD80D /* lata.dae */; };
+		B492C8F5236A013B008BD80D /* lata.scn in Resources */ = {isa = PBXBuildFile; fileRef = B492C8F4236A013B008BD80D /* lata.scn */; };
+		B493FF962369EAAC00833173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493FF952369EAAC00833173 /* AppDelegate.swift */; };
+		B493FF982369EAAC00833173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493FF972369EAAC00833173 /* SceneDelegate.swift */; };
+		B493FF9A2369EAAC00833173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493FF992369EAAC00833173 /* ViewController.swift */; };
+		B493FF9D2369EAAC00833173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B493FF9B2369EAAC00833173 /* Main.storyboard */; };
+		B493FF9F2369EAAE00833173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B493FF9E2369EAAE00833173 /* Assets.xcassets */; };
+		B493FFA22369EAAE00833173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B493FFA02369EAAE00833173 /* LaunchScreen.storyboard */; };
+		B493FFAA2369EB1600833173 /* InstruccionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493FFA92369EB1600833173 /* InstruccionesViewController.swift */; };
+		B493FFAC2369F09C00833173 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493FFAB2369F09C00833173 /* SceneViewController.swift */; };
+		B4A6486A236B303100E2440A /* boteverde.dae in Resources */ = {isa = PBXBuildFile; fileRef = B4A64869236B303100E2440A /* boteverde.dae */; };
+		B4A6486C236B304700E2440A /* boteverde.scn in Resources */ = {isa = PBXBuildFile; fileRef = B4A6486B236B304700E2440A /* boteverde.scn */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B430E952236A079700F35238 /* manzana.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = manzana.dae; sourceTree = "<group>"; };
+		B430E954236A07A100F35238 /* manzana.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = manzana.scn; sourceTree = "<group>"; };
+		B430E959236A086A00F35238 /* papertexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = papertexture.jpg; sourceTree = "<group>"; };
+		B430E95C236A08C500F35238 /* boladepapel.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boladepapel.dae; sourceTree = "<group>"; };
+		B430E95E236A08CB00F35238 /* boladepapel.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = boladepapel.scn; path = ../../boladepapel.scn; sourceTree = "<group>"; };
+		B430E96A236A3C0B00F35238 /* boteazul.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boteazul.dae; sourceTree = "<group>"; };
+		B430E96C236A3C1300F35238 /* boteazul.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = boteazul.scn; path = ../../../../../boteazul.scn; sourceTree = "<group>"; };
+		B430E972236A3DA100F35238 /* botegris.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = botegris.dae; sourceTree = "<group>"; };
+		B430E974236A3DA800F35238 /* botegris.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = botegris.scn; sourceTree = "<group>"; };
+		B492C8F22369FE4B008BD80D /* lata.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = lata.dae; sourceTree = "<group>"; };
+		B492C8F4236A013B008BD80D /* lata.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = lata.scn; sourceTree = "<group>"; };
+		B493FF922369EAAC00833173 /* ReciclAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReciclAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B493FF952369EAAC00833173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B493FF972369EAAC00833173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B493FF992369EAAC00833173 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B493FF9C2369EAAC00833173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B493FF9E2369EAAE00833173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B493FFA12369EAAE00833173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B493FFA32369EAAE00833173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B493FFA92369EB1600833173 /* InstruccionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstruccionesViewController.swift; sourceTree = "<group>"; };
+		B493FFAB2369F09C00833173 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
+		B4A64869236B303100E2440A /* boteverde.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = boteverde.dae; path = ../boteverde.dae; sourceTree = "<group>"; };
+		B4A6486B236B304700E2440A /* boteverde.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = boteverde.scn; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B493FF8F2369EAAC00833173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B430E976236A425F00F35238 /* daes */ = {
+			isa = PBXGroup;
+			children = (
+				B4A64869236B303100E2440A /* boteverde.dae */,
+				B492C8F22369FE4B008BD80D /* lata.dae */,
+				B430E952236A079700F35238 /* manzana.dae */,
+				B430E95C236A08C500F35238 /* boladepapel.dae */,
+				B430E959236A086A00F35238 /* papertexture.jpg */,
+				B430E96A236A3C0B00F35238 /* boteazul.dae */,
+				B430E972236A3DA100F35238 /* botegris.dae */,
+			);
+			path = daes;
+			sourceTree = "<group>";
+		};
+		B493FF892369EAAC00833173 = {
+			isa = PBXGroup;
+			children = (
+				B493FF942369EAAC00833173 /* ReciclAR */,
+				B493FF932369EAAC00833173 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B493FF932369EAAC00833173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B493FF922369EAAC00833173 /* ReciclAR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B493FF942369EAAC00833173 /* ReciclAR */ = {
+			isa = PBXGroup;
+			children = (
+				B430E976236A425F00F35238 /* daes */,
+				B493FF952369EAAC00833173 /* AppDelegate.swift */,
+				B493FF972369EAAC00833173 /* SceneDelegate.swift */,
+				B493FF992369EAAC00833173 /* ViewController.swift */,
+				B493FF9B2369EAAC00833173 /* Main.storyboard */,
+				B493FFAB2369F09C00833173 /* SceneViewController.swift */,
+				B493FFA92369EB1600833173 /* InstruccionesViewController.swift */,
+				B493FF9E2369EAAE00833173 /* Assets.xcassets */,
+				B493FFA02369EAAE00833173 /* LaunchScreen.storyboard */,
+				B493FFA32369EAAE00833173 /* Info.plist */,
+				B492C8F4236A013B008BD80D /* lata.scn */,
+				B430E954236A07A100F35238 /* manzana.scn */,
+				B430E95E236A08CB00F35238 /* boladepapel.scn */,
+				B430E96C236A3C1300F35238 /* boteazul.scn */,
+				B4A6486B236B304700E2440A /* boteverde.scn */,
+				B430E974236A3DA800F35238 /* botegris.scn */,
+			);
+			path = ReciclAR;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B493FF912369EAAC00833173 /* ReciclAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B493FFA62369EAAE00833173 /* Build configuration list for PBXNativeTarget "ReciclAR" */;
+			buildPhases = (
+				B493FF8E2369EAAC00833173 /* Sources */,
+				B493FF8F2369EAAC00833173 /* Frameworks */,
+				B493FF902369EAAC00833173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReciclAR;
+			productName = ReciclAR;
+			productReference = B493FF922369EAAC00833173 /* ReciclAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B493FF8A2369EAAC00833173 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Carlos Fernando Garza Martinez";
+				TargetAttributes = {
+					B493FF912369EAAC00833173 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = B493FF8D2369EAAC00833173 /* Build configuration list for PBXProject "ReciclAR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B493FF892369EAAC00833173;
+			productRefGroup = B493FF932369EAAC00833173 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B493FF912369EAAC00833173 /* ReciclAR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B493FF902369EAAC00833173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B492C8F5236A013B008BD80D /* lata.scn in Resources */,
+				B430E953236A079700F35238 /* manzana.dae in Resources */,
+				B493FFA22369EAAE00833173 /* LaunchScreen.storyboard in Resources */,
+				B493FF9F2369EAAE00833173 /* Assets.xcassets in Resources */,
+				B430E96D236A3C1300F35238 /* boteazul.scn in Resources */,
+				B492C8F32369FE4B008BD80D /* lata.dae in Resources */,
+				B4A6486C236B304700E2440A /* boteverde.scn in Resources */,
+				B430E95D236A08C500F35238 /* boladepapel.dae in Resources */,
+				B430E973236A3DA100F35238 /* botegris.dae in Resources */,
+				B493FF9D2369EAAC00833173 /* Main.storyboard in Resources */,
+				B430E96B236A3C0B00F35238 /* boteazul.dae in Resources */,
+				B4A6486A236B303100E2440A /* boteverde.dae in Resources */,
+				B430E955236A07A100F35238 /* manzana.scn in Resources */,
+				B430E95F236A08CB00F35238 /* boladepapel.scn in Resources */,
+				B430E975236A3DA800F35238 /* botegris.scn in Resources */,
+				B430E95B236A086A00F35238 /* papertexture.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B493FF8E2369EAAC00833173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B493FFAC2369F09C00833173 /* SceneViewController.swift in Sources */,
+				B493FFAA2369EB1600833173 /* InstruccionesViewController.swift in Sources */,
+				B493FF9A2369EAAC00833173 /* ViewController.swift in Sources */,
+				B493FF962369EAAC00833173 /* AppDelegate.swift in Sources */,
+				B493FF982369EAAC00833173 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B493FF9B2369EAAC00833173 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B493FF9C2369EAAC00833173 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B493FFA02369EAAE00833173 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B493FFA12369EAAE00833173 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B493FFA42369EAAE00833173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B493FFA52369EAAE00833173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B493FFA72369EAAE00833173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6WW69QFGQ;
+				INFOPLIST_FILE = ReciclAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Carlos-Garza.ReciclAR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B493FFA82369EAAE00833173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6WW69QFGQ;
+				INFOPLIST_FILE = ReciclAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Carlos-Garza.ReciclAR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B493FF8D2369EAAC00833173 /* Build configuration list for PBXProject "ReciclAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B493FFA42369EAAE00833173 /* Debug */,
+				B493FFA52369EAAE00833173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B493FFA62369EAAE00833173 /* Build configuration list for PBXNativeTarget "ReciclAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B493FFA72369EAAE00833173 /* Debug */,
+				B493FFA82369EAAE00833173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B493FF8A2369EAAC00833173 /* Project object */;
+}
