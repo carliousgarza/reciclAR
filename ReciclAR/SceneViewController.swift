@@ -34,7 +34,7 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
     var homeNode3 = SCNNode()
     
     var timer:Timer?
-    var timeLeft = 5
+    var timeLeft = 30
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +44,7 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         lbScoreLabel.isHidden = true
         btnBack.isHidden = true
         blurView.isHidden = false
+        lbTimeLeft.isHidden = true
         setUpScene()
         upNext()
     }
@@ -142,7 +143,9 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         imgLogo.isHidden = true
         blurView2.isHidden = true
         blurView.isHidden = true
+        lbTimeLeft.isHidden = false
         createTrashCan()
+        timeLeft = 30
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
     }
     
@@ -171,6 +174,7 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         imgLogo.isHidden = false
         blurView2.isHidden = false
         lbScoreLabel.text = String(0)
+        lbTimeLeft.isHidden = true
         score = 0
         deleteTrashCan()
     }
