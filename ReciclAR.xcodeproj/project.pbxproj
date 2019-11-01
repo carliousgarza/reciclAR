@@ -13,7 +13,6 @@
 		B430E95D236A08C500F35238 /* boladepapel.dae in Resources */ = {isa = PBXBuildFile; fileRef = B430E95C236A08C500F35238 /* boladepapel.dae */; };
 		B430E95F236A08CB00F35238 /* boladepapel.scn in Resources */ = {isa = PBXBuildFile; fileRef = B430E95E236A08CB00F35238 /* boladepapel.scn */; };
 		B430E96B236A3C0B00F35238 /* boteazul.dae in Resources */ = {isa = PBXBuildFile; fileRef = B430E96A236A3C0B00F35238 /* boteazul.dae */; };
-		B430E96D236A3C1300F35238 /* boteazul.scn in Resources */ = {isa = PBXBuildFile; fileRef = B430E96C236A3C1300F35238 /* boteazul.scn */; };
 		B430E973236A3DA100F35238 /* botegris.dae in Resources */ = {isa = PBXBuildFile; fileRef = B430E972236A3DA100F35238 /* botegris.dae */; };
 		B430E975236A3DA800F35238 /* botegris.scn in Resources */ = {isa = PBXBuildFile; fileRef = B430E974236A3DA800F35238 /* botegris.scn */; };
 		B492C8F32369FE4B008BD80D /* lata.dae in Resources */ = {isa = PBXBuildFile; fileRef = B492C8F22369FE4B008BD80D /* lata.dae */; };
@@ -38,6 +37,7 @@
 		B4A64887236B3EF300E2440A /* andres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4A64885236B3EF300E2440A /* andres.jpg */; };
 		B4A64888236B3EF300E2440A /* micara3.dae in Resources */ = {isa = PBXBuildFile; fileRef = B4A64886236B3EF300E2440A /* micara3.dae */; };
 		B4A6488C236B3F4200E2440A /* micara3.scn in Resources */ = {isa = PBXBuildFile; fileRef = B4A6488B236B3F4200E2440A /* micara3.scn */; };
+		B4CDCF2A236CCA6000F24A90 /* boteazul.scn in Resources */ = {isa = PBXBuildFile; fileRef = B4CDCF29236CCA5F00F24A90 /* boteazul.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +45,8 @@
 		B430E954236A07A100F35238 /* manzana.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = manzana.scn; sourceTree = "<group>"; };
 		B430E959236A086A00F35238 /* papertexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = papertexture.jpg; sourceTree = "<group>"; };
 		B430E95C236A08C500F35238 /* boladepapel.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boladepapel.dae; sourceTree = "<group>"; };
-		B430E95E236A08CB00F35238 /* boladepapel.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = boladepapel.scn; path = ../../boladepapel.scn; sourceTree = "<group>"; };
+		B430E95E236A08CB00F35238 /* boladepapel.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = boladepapel.scn; sourceTree = "<group>"; };
 		B430E96A236A3C0B00F35238 /* boteazul.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boteazul.dae; sourceTree = "<group>"; };
-		B430E96C236A3C1300F35238 /* boteazul.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = boteazul.scn; path = ../../../../../boteazul.scn; sourceTree = "<group>"; };
 		B430E972236A3DA100F35238 /* botegris.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = botegris.dae; sourceTree = "<group>"; };
 		B430E974236A3DA800F35238 /* botegris.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = botegris.scn; sourceTree = "<group>"; };
 		B492C8F22369FE4B008BD80D /* lata.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = lata.dae; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		B4A64885236B3EF300E2440A /* andres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = andres.jpg; sourceTree = "<group>"; };
 		B4A64886236B3EF300E2440A /* micara3.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = micara3.dae; sourceTree = "<group>"; };
 		B4A6488B236B3F4200E2440A /* micara3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = micara3.scn; sourceTree = "<group>"; };
+		B4CDCF29236CCA5F00F24A90 /* boteazul.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = boteazul.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,24 +87,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B430E976236A425F00F35238 /* daes y assets */ = {
+		B430E976236A425F00F35238 /* daes */ = {
 			isa = PBXGroup;
 			children = (
-				B4A64885236B3EF300E2440A /* andres.jpg */,
 				B4A64886236B3EF300E2440A /* micara3.dae */,
 				B4A64876236B3D8200E2440A /* micara2.dae */,
-				B4A64875236B3D8200E2440A /* Ulrik.jpg */,
-				B4A64870236B3B4200E2440A /* mi cara.png */,
 				B4A6486F236B3B4200E2440A /* micara.dae */,
 				B4A64869236B303100E2440A /* boteverde.dae */,
 				B492C8F22369FE4B008BD80D /* lata.dae */,
 				B430E952236A079700F35238 /* manzana.dae */,
 				B430E95C236A08C500F35238 /* boladepapel.dae */,
-				B430E959236A086A00F35238 /* papertexture.jpg */,
 				B430E96A236A3C0B00F35238 /* boteazul.dae */,
 				B430E972236A3DA100F35238 /* botegris.dae */,
 			);
-			path = "daes y assets";
+			path = daes;
 			sourceTree = "<group>";
 		};
 		B493FF892369EAAC00833173 = {
@@ -126,7 +122,7 @@
 		B493FF942369EAAC00833173 /* ReciclAR */ = {
 			isa = PBXGroup;
 			children = (
-				B430E976236A425F00F35238 /* daes y assets */,
+				B430E976236A425F00F35238 /* daes */,
 				B493FF952369EAAC00833173 /* AppDelegate.swift */,
 				B493FF972369EAAC00833173 /* SceneDelegate.swift */,
 				B493FF9B2369EAAC00833173 /* Main.storyboard */,
@@ -140,12 +136,16 @@
 				B492C8F4236A013B008BD80D /* lata.scn */,
 				B430E954236A07A100F35238 /* manzana.scn */,
 				B430E95E236A08CB00F35238 /* boladepapel.scn */,
-				B430E96C236A3C1300F35238 /* boteazul.scn */,
+				B4CDCF29236CCA5F00F24A90 /* boteazul.scn */,
 				B4A6486B236B304700E2440A /* boteverde.scn */,
 				B430E974236A3DA800F35238 /* botegris.scn */,
 				B4A64873236B3B5600E2440A /* micara.scn */,
 				B4A64879236B3D9800E2440A /* micara2.scn */,
+				B4A64885236B3EF300E2440A /* andres.jpg */,
+				B4A64875236B3D8200E2440A /* Ulrik.jpg */,
+				B4A64870236B3B4200E2440A /* mi cara.png */,
 				B4A6488B236B3F4200E2440A /* micara3.scn */,
+				B430E959236A086A00F35238 /* papertexture.jpg */,
 			);
 			path = ReciclAR;
 			sourceTree = "<group>";
@@ -214,10 +214,10 @@
 				B4A64888236B3EF300E2440A /* micara3.dae in Resources */,
 				B493FFA22369EAAE00833173 /* LaunchScreen.storyboard in Resources */,
 				B493FF9F2369EAAE00833173 /* Assets.xcassets in Resources */,
-				B430E96D236A3C1300F35238 /* boteazul.scn in Resources */,
 				B4A64872236B3B4200E2440A /* mi cara.png in Resources */,
 				B4A64878236B3D8200E2440A /* micara2.dae in Resources */,
 				B4A64871236B3B4200E2440A /* micara.dae in Resources */,
+				B4CDCF2A236CCA6000F24A90 /* boteazul.scn in Resources */,
 				B492C8F32369FE4B008BD80D /* lata.dae in Resources */,
 				B4A6486C236B304700E2440A /* boteverde.scn in Resources */,
 				B430E95D236A08C500F35238 /* boladepapel.dae in Resources */,
