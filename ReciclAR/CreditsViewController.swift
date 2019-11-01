@@ -66,6 +66,12 @@ class CreditsViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsCont
                 let force = SCNVector3(-cameraTransform.m31 * power, -cameraTransform.m32 * power, -cameraTransform.m33 * power)
                 lataNode.physicsBody?.applyForce(force, asImpulse: true)
                 sceneView.scene.rootNode.addChildNode(lataNode)
+                lataNode.runAction(
+                    SCNAction.sequence([
+                        SCNAction.wait(duration: 5.0),
+                        SCNAction.removeFromParentNode()
+                    ])
+                )
                 break;
             case 1:
                 guard let lataScene = SCNScene(named: "micara2.scn"),
@@ -82,6 +88,12 @@ class CreditsViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsCont
                 let force = SCNVector3(-cameraTransform.m31 * power, -cameraTransform.m32 * power, -cameraTransform.m33 * power)
                 lataNode.physicsBody?.applyForce(force, asImpulse: true)
                 sceneView.scene.rootNode.addChildNode(lataNode)
+                lataNode.runAction(
+                    SCNAction.sequence([
+                        SCNAction.wait(duration: 5.0),
+                        SCNAction.removeFromParentNode()
+                    ])
+                )
                 break;
             case 2:
                 guard let lataScene = SCNScene(named: "micara3.scn"),
@@ -98,6 +110,12 @@ class CreditsViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsCont
                 let force = SCNVector3(-cameraTransform.m31 * power, -cameraTransform.m32 * power, -cameraTransform.m33 * power)
                 lataNode.physicsBody?.applyForce(force, asImpulse: true)
                 sceneView.scene.rootNode.addChildNode(lataNode)
+                lataNode.runAction(
+                    SCNAction.sequence([
+                        SCNAction.wait(duration: 5.0),
+                        SCNAction.removeFromParentNode()
+                    ])
+                )
                 break;
             default:
                 break;

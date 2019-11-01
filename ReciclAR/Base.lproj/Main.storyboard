@@ -299,7 +299,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6o-gc-eyd">
-                                <rect key="frame" x="30" y="50" width="652" height="884"/>
+                                <rect key="frame" x="30" y="30" width="652" height="460"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="bF7-kU-oot" appends="YES" id="rMW-xe-icR"/>
@@ -317,15 +317,45 @@
                                     <action selector="handleBack:" destination="uGa-DM-QS5" eventType="touchUpInside" id="Lzx-S0-LPF"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkN-hy-EON">
+                                <rect key="frame" x="30" y="498" width="652" height="456"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="652" id="8G1-7R-Vyd"/>
+                                    <constraint firstAttribute="height" constant="456" id="8kw-4e-dXZ"/>
+                                    <constraint firstAttribute="width" secondItem="PkN-hy-EON" secondAttribute="height" multiplier="163:114" id="Dzc-Ix-1HS"/>
+                                </constraints>
+                                <string key="text">ReciclAR ha sido desarrollado por estudiantes del Tecnológico de Monterrey en la actividad de semana i “Elimina la frontera entre lo real y lo virtual”, coordinada por la maestra Yolanda Martínez Treviño, durante la semana del 28 de Octubre al 1 de Noviembre de 2019.  
+Desarrolladores:
+Carlos Fernando Garza Martínez Andrés Abundis Correa
+Ulrik Alberto Nuño Tapia
+ Diseñadores:
+Carlos Fernando Garza Martínez Andrés Abundis Correa
+Ulrik Alberto Nuño Tapia
+ Asesores: Joaquín Ramírez Vila Marcelo Fernando Martínez
+Lizzie Marielle Guajardo Mozo  
+ReciclAR se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro.
+
+Coquet, A. (2019). Coding, computer, developer icon. [imagen]. Recuperado de https://www.iconfinder.com/icons/3369059/coding_computer_developer_icon
+
+Peterolah0. (2019). Button Back Return Free Photo. [imagen]. Recuperado de https://www.needpix.com/photo/820473/button-back-return-step-back-arrow-the-direction-of-the</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.64397251605987549" green="1" blue="0.69407165050506592" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="l6o-gc-eyd" firstAttribute="leading" secondItem="S4b-gl-1be" secondAttribute="leading" constant="30" id="63G-Yk-60Q"/>
-                            <constraint firstItem="l6o-gc-eyd" firstAttribute="top" secondItem="S4b-gl-1be" secondAttribute="top" constant="50" id="7B2-3w-GkJ"/>
+                            <constraint firstItem="PkN-hy-EON" firstAttribute="top" secondItem="l6o-gc-eyd" secondAttribute="bottom" constant="8" id="9Kc-YF-New"/>
                             <constraint firstItem="f1f-X5-cxP" firstAttribute="top" secondItem="S4b-gl-1be" secondAttribute="top" constant="8" id="ACh-iW-uWB"/>
-                            <constraint firstItem="S4b-gl-1be" firstAttribute="trailing" secondItem="l6o-gc-eyd" secondAttribute="trailing" constant="30" id="HnQ-Kl-Si2"/>
-                            <constraint firstItem="S4b-gl-1be" firstAttribute="bottom" secondItem="l6o-gc-eyd" secondAttribute="bottom" constant="50" id="PiI-FP-m6a"/>
+                            <constraint firstItem="l6o-gc-eyd" firstAttribute="leading" secondItem="S4b-gl-1be" secondAttribute="leading" constant="30" id="DPK-9t-kR3"/>
+                            <constraint firstItem="PkN-hy-EON" firstAttribute="top" secondItem="l6o-gc-eyd" secondAttribute="bottom" constant="8" id="UUN-Y5-dYF"/>
+                            <constraint firstItem="S4b-gl-1be" firstAttribute="trailing" secondItem="l6o-gc-eyd" secondAttribute="trailing" constant="30" id="Wdb-ey-OBl"/>
                             <constraint firstItem="f1f-X5-cxP" firstAttribute="leading" secondItem="S4b-gl-1be" secondAttribute="leading" constant="8" id="Xav-nm-q2n"/>
+                            <constraint firstItem="S4b-gl-1be" firstAttribute="bottom" secondItem="PkN-hy-EON" secondAttribute="bottom" constant="30" id="dQf-2c-j3L"/>
+                            <constraint firstItem="PkN-hy-EON" firstAttribute="leading" secondItem="S4b-gl-1be" secondAttribute="leading" constant="30" id="dpa-DX-SSI"/>
+                            <constraint firstItem="S4b-gl-1be" firstAttribute="trailing" secondItem="PkN-hy-EON" secondAttribute="trailing" constant="30" id="r8C-4d-cos"/>
+                            <constraint firstItem="l6o-gc-eyd" firstAttribute="top" secondItem="S4b-gl-1be" secondAttribute="top" constant="30" id="xhi-2Z-9f4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S4b-gl-1be"/>
                     </view>
