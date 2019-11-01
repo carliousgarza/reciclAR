@@ -22,7 +22,13 @@ class InstruccionesViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
+    }
     
+    override var shouldAutorotate: Bool{
+        return false
+    }
 
     /*
     // MARK: - Navigation

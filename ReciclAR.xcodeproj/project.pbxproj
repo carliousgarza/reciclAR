@@ -20,7 +20,6 @@
 		B492C8F5236A013B008BD80D /* lata.scn in Resources */ = {isa = PBXBuildFile; fileRef = B492C8F4236A013B008BD80D /* lata.scn */; };
 		B493FF962369EAAC00833173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493FF952369EAAC00833173 /* AppDelegate.swift */; };
 		B493FF982369EAAC00833173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493FF972369EAAC00833173 /* SceneDelegate.swift */; };
-		B493FF9A2369EAAC00833173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493FF992369EAAC00833173 /* ViewController.swift */; };
 		B493FF9D2369EAAC00833173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B493FF9B2369EAAC00833173 /* Main.storyboard */; };
 		B493FF9F2369EAAE00833173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B493FF9E2369EAAE00833173 /* Assets.xcassets */; };
 		B493FFA22369EAAE00833173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B493FFA02369EAAE00833173 /* LaunchScreen.storyboard */; };
@@ -56,7 +55,6 @@
 		B493FF922369EAAC00833173 /* ReciclAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReciclAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B493FF952369EAAC00833173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B493FF972369EAAC00833173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B493FF992369EAAC00833173 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B493FF9C2369EAAC00833173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B493FF9E2369EAAE00833173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B493FFA12369EAAE00833173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 				B430E976236A425F00F35238 /* daes y assets */,
 				B493FF952369EAAC00833173 /* AppDelegate.swift */,
 				B493FF972369EAAC00833173 /* SceneDelegate.swift */,
-				B493FF992369EAAC00833173 /* ViewController.swift */,
 				B493FF9B2369EAAC00833173 /* Main.storyboard */,
 				B4A3CCE5236B885100BDBC5A /* ScoreViewController.swift */,
 				B4A6486D236B338800E2440A /* CreditsViewController.swift */,
@@ -250,7 +247,6 @@
 				B493FFAC2369F09C00833173 /* SceneViewController.swift in Sources */,
 				B4A6486E236B338800E2440A /* CreditsViewController.swift in Sources */,
 				B493FFAA2369EB1600833173 /* InstruccionesViewController.swift in Sources */,
-				B493FF9A2369EAAC00833173 /* ViewController.swift in Sources */,
 				B493FF962369EAAC00833173 /* AppDelegate.swift in Sources */,
 				B493FF982369EAAC00833173 /* SceneDelegate.swift in Sources */,
 			);
@@ -399,11 +395,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q6WW69QFGQ;
 				INFOPLIST_FILE = ReciclAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Carlos-Garza.ReciclAR";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.itesmalumnos.ReciclAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -417,11 +414,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q6WW69QFGQ;
 				INFOPLIST_FILE = ReciclAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Carlos-Garza.ReciclAR";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.itesmalumnos.ReciclAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

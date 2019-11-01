@@ -29,6 +29,14 @@ class ScoreViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool{
+        return false
+    }
+    
     func checkAndUpdateScore(){
         let highScore = UserDefaults.standard.integer(forKey: "highScore")
         if score>highScore {

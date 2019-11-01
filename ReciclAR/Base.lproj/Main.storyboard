@@ -165,7 +165,7 @@
                                                 <action selector="handleStart:" destination="UKK-bs-Oc2" eventType="touchUpInside" id="cMH-Fj-bv8"/>
                                             </connections>
                                         </button>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ldf-3k-azs">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boteverdeicon" translatesAutoresizingMaskIntoConstraints="NO" id="ldf-3k-azs">
                                             <rect key="frame" x="260" y="151" width="248" height="248"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="248" id="NdS-NR-uYc"/>
@@ -347,11 +347,11 @@
     </scenes>
     <resources>
         <image name="Instructions" width="1496" height="1458"/>
+        <image name="boteverdeicon" width="860" height="860"/>
         <image name="button-1905961_1280" width="1280" height="1280"/>
         <image name="iconDev" width="512" height="512"/>
         <image name="iconIns" width="512" height="512"/>
         <image name="iconStart" width="600" height="600"/>
         <image name="lata" width="771" height="772"/>
-        <image name="logo" width="1024" height="1024"/>
     </resources>
 </document>

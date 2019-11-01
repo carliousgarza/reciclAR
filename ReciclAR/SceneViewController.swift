@@ -47,6 +47,14 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         upNext()
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool{
+        return false
+    }
+    
     func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
         print("** Collision!" + contact.nodeA.name! + " hit " + contact.nodeB.name!)
         
