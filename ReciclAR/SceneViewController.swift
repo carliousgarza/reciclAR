@@ -146,6 +146,7 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         lbTimeLeft.isHidden = false
         createTrashCan()
         timeLeft = 30
+        lbTimeLeft.text = "Time left: \(timeLeft)"
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
     }
     
@@ -181,6 +182,9 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         lbTimeLeft.isHidden = true
         timeLeft = 30
         score = 0
+        timer?.invalidate()
+        timer = nil
+        
         deleteTrashCan()
     }
     

@@ -50,11 +50,11 @@ class CreditsViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsCont
                 lataNode.transform = cameraTransform
                 
                 let physicsBody = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(node: lataNode, options: [SCNPhysicsShape.Option.collisionMargin: 0.01]))
-                
+                physicsBody.isAffectedByGravity = false
                 lataNode.physicsBody = physicsBody
                 
                 let power = Float(10.0)
-                let force = SCNVector3(-cameraTransform.m31 * power, -cameraTransform.m32 * power + 6, -cameraTransform.m33 * power)
+                let force = SCNVector3(-cameraTransform.m31 * power, -cameraTransform.m32 * power, -cameraTransform.m33 * power)
                 lataNode.physicsBody?.applyForce(force, asImpulse: true)
                 sceneView.scene.rootNode.addChildNode(lataNode)
                 break;
@@ -66,11 +66,11 @@ class CreditsViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsCont
                 lataNode.transform = cameraTransform
                 
                 let physicsBody = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(node: lataNode, options: [SCNPhysicsShape.Option.collisionMargin: 0.01]))
-                
+                physicsBody.isAffectedByGravity = false
                 lataNode.physicsBody = physicsBody
                 
                 let power = Float(10.0)
-                let force = SCNVector3(-cameraTransform.m31 * power, -cameraTransform.m32 * power + 6, -cameraTransform.m33 * power)
+                let force = SCNVector3(-cameraTransform.m31 * power, -cameraTransform.m32 * power, -cameraTransform.m33 * power)
                 lataNode.physicsBody?.applyForce(force, asImpulse: true)
                 sceneView.scene.rootNode.addChildNode(lataNode)
                 break;
@@ -82,11 +82,11 @@ class CreditsViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsCont
                 lataNode.transform = cameraTransform
                 
                 let physicsBody = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(node: lataNode, options: [SCNPhysicsShape.Option.collisionMargin: 0.01]))
-                
+                physicsBody.isAffectedByGravity = false
                 lataNode.physicsBody = physicsBody
                 
                 let power = Float(10.0)
-                let force = SCNVector3(-cameraTransform.m31 * power, -cameraTransform.m32 * power + 6, -cameraTransform.m33 * power)
+                let force = SCNVector3(-cameraTransform.m31 * power, -cameraTransform.m32 * power, -cameraTransform.m33 * power)
                 lataNode.physicsBody?.applyForce(force, asImpulse: true)
                 sceneView.scene.rootNode.addChildNode(lataNode)
                 break;
