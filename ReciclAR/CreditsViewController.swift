@@ -21,6 +21,7 @@ class CreditsViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsCont
         sceneView.scene.physicsWorld.contactDelegate = self
         setUpScene()
         upNext()
+        isModalInPresentation = true
         // Do any additional setup after loading the view.
     }
     
@@ -107,6 +108,7 @@ class CreditsViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsCont
     }
     
     @IBAction func handleBack(_ sender: UIButton) {
+        sceneView.session.pause()
         dismiss(animated: true, completion: nil)
     }
     

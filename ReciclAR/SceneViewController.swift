@@ -18,7 +18,6 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
     @IBOutlet weak var lbReciclar: UILabel!
     @IBOutlet var tapGesture: UITapGestureRecognizer!
     @IBOutlet weak var lbScore: UILabel!
-    @IBOutlet weak var lbScoreLabel: UILabel!
     @IBOutlet weak var imgNextBall: UIImageView!
     @IBOutlet weak var btnCredits: UIButton!
     @IBOutlet weak var imgLogo: UIImageView!
@@ -41,7 +40,6 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         sceneView.scene.physicsWorld.contactDelegate = self
         sceneView.session.pause()
         lbScore.isHidden = true
-        lbScoreLabel.isHidden = true
         btnBack.isHidden = true
         blurView.isHidden = false
         lbTimeLeft.isHidden = true
@@ -121,13 +119,13 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
     func scoreKeeper(){
         score = score + 1
         print(score)
-        self.lbScore.text = String(score)
+        self.lbScore.text = "Score: \(String(score))"
     }
     
     func scoreKeeperWrong(){
         score = score - 1
         print(score)
-        self.lbScore.text = String(score)
+        self.lbScore.text = "Score: \(String(score))"
     }
     
     @IBAction func handleStart(_ sender: UIButton) {
@@ -139,7 +137,6 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         btnInstructions.isHidden = true
         lbReciclar.isHidden = true
         lbScore.isHidden = false
-        lbScoreLabel.isHidden = false
         imgLogo.isHidden = true
         blurView2.isHidden = true
         blurView.isHidden = true
@@ -175,7 +172,6 @@ class SceneViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContac
         btnInstructions.isHidden = false
         lbReciclar.isHidden = false
         lbScore.isHidden = true
-        lbScoreLabel.isHidden = true
         imgLogo.isHidden = false
         blurView2.isHidden = false
         lbScore.text = String(0)
