@@ -12,18 +12,54 @@ class ScoreViewController: UIViewController {
 
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var lbScore: UILabel!
+    @IBOutlet weak var lbHighscore: UILabel!
     
     var score : Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         lbScore.text = "You got a score of \(score!)!"
-        createParticles()
+        if(score > 0){
+            createParticles()
+        }
+        else {
+            createSadParticles()
+        }
+        checkAndUpdateScore()
         // Do any additional setup after loading the view.
+    }
+    
+    func checkAndUpdateScore(){
+        let highScore = UserDefaults.standard.integer(forKey: "highScore")
+        if score>highScore {
+            UserDefaults.standard.set(score, forKey: "highScore")
+            lbHighscore.text = "Highest score achieved: \(score!) "
+        }
+        else {
+            lbHighscore.text = "Highest score achieved: \(highScore)"
+        }
     }
     
     @IBAction func handleBack(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func createSadParticles(){
+        view.backgroundColor = UIColor.lightGray
+        
+        let particleEmitter = CAEmitterLayer()
+
+        particleEmitter.emitterPosition = CGPoint(x: view.center.x, y: 0)
+        particleEmitter.emitterShape = .line
+        particleEmitter.emitterSize = CGSize(width: view.frame.size.width, height: 1)
+
+        let purple = makeEmitterCell(color: UIColor.purple)
+        let black = makeEmitterCell(color: UIColor.black)
+        let gray = makeEmitterCell(color: UIColor.gray)
+        
+        particleEmitter.emitterCells = [purple, black, gray]
+
+        view.layer.addSublayer(particleEmitter)
     }
     
     func createParticles() {
